@@ -1,0 +1,66 @@
+jd-tip {
+  display: block;
+  .jd-tip-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: var(--height);
+    .close {
+      width: 30px;
+      text-align: center;
+      img {
+        width: 10px;
+        min-width: 10px;
+        max-width: 10px;
+      }
+    }
+    .logo {
+      width: 45px;
+      text-align: center;
+      img {
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+      }
+    }
+    .btn {
+      width: 100px;
+      line-height: var(--height);
+      height: var(--height);
+      background-color: var(--btnColor);
+      font-size: 14px;
+      color: #fff;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    .jd-tip-content {
+      flex: 1;
+      min-height: 100%;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      line-height: var(--height);
+      height: var(--height);
+      font-size: 14px;
+    }
+  }
+  .jd-tip {
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    font-size: 0;
+    top: var(--top);
+    overflow: hidden;
+    z-index: 20;
+    height: var(--height);
+    background: var(--bgColor);
+    color: #fff;
+  }
+  .header-placeholder {
+    height: var(--height);
+  }
+}
