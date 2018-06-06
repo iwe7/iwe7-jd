@@ -1,19 +1,17 @@
 .jd-hots-item {
-  background: #fff;
   box-sizing: content-box;
   margin: 3px;
   width: var(--width);
+  background: #fff;
   img {
     width: 100%;
   }
   .title {
-    height: 33px;
-    font-size: 13px;
+    height: 17px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     word-break: break-word;
     color: #232326;
     margin-top: 5px;
