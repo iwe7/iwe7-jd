@@ -1,0 +1,14 @@
+<div class="jd-search-layout">
+  <div class="jd-search-cover"></div>
+  <div class="jd-search-layout-left" (click)="_leftStream($event)" #left>
+    <span class="icon menu-icon"></span>
+  </div>
+  <div class="jd-search-container">
+    <div class="logo-icon" #logoIcon></div>
+    <div class="search-icon" #searchIcon></div>
+    <input type="search" #input (change)="_change($event)" [placeholder]="placeholder">
+  </div>
+  <div class="jd-search-layout-right" (click)="_rightStream($event)" #right>
+    <span class="icon login-icon"></span>
+  </div>
+</div>
