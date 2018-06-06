@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Injector } from '@angular/core';
+import { Component, OnInit, Input, Injector, ChangeDetectionStrategy } from '@angular/core';
 import { Iwe7BaseComponent } from 'iwe7-base';
 import { Iwe7IcssService } from 'iwe7-icss';
 
@@ -6,7 +6,8 @@ import { Iwe7IcssService } from 'iwe7-icss';
   selector: 'jd-swiper',
   templateUrl: 'jd-swiper.html',
   styleUrls: ['./jd-swiper.scss'],
-  providers: [Iwe7IcssService]
+  providers: [Iwe7IcssService],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class JdSwiperComponent extends Iwe7BaseComponent {
   @Input() list: any[] = [{
@@ -15,8 +16,11 @@ export class JdSwiperComponent extends Iwe7BaseComponent {
   height: any;
   constructor(injector: Injector) {
     super(injector, 'jd-swiper');
-    this.getCyc('ngAfterViewInit').subscribe(res => {
-      this.height = this.ele.nativeElement.clientHeight + 'px';
+    this.runOutsideAngular(() => {
+      this.getCyc('ngAfterViewInit').subscribe(res => {
+        this.height = this.ele.nativeElement.clientHeight + 'px';
+        this._cd.markForCheck();
+      });
     });
   }
 }

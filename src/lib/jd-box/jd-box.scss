@@ -1,0 +1,36 @@
+:host {
+  position: relative;
+  color: #686868;
+  display: block;
+  text-align: center;
+}
+
+.quick-box {
+  position: relative;
+  color: #686868;
+  height: 0px;
+  width: var(--width);
+  padding-bottom: var(--width);
+  .quick-box-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    span {
+      display: flex;
+      height: 15px;
+      line-height: 15px;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}
