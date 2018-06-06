@@ -1,0 +1,12 @@
+:host {
+    position: fixed;
+    bottom: 62px;
+    right: 9px;
+    width: 38px;
+    height: 38px;
+    background-image: var(--icon);
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 20;
+}

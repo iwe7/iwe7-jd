@@ -1,0 +1,12 @@
+<div class="jd-floor-container">
+  <div class="jd-floor-title" *ngIf="title">
+    <ng-container *ngTemplateOutlet="title"></ng-container>
+  </div>
+  <div class="jd-floor-content">
+    <mat-grid-list [cols]="cols" [rowHeight]="rowHeight">
+      <mat-grid-tile *ngFor="let tile of grids" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        <ng-container *ngTemplateOutlet="content;context: {$implicit: tile}"></ng-container>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

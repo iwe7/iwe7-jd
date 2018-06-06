@@ -1,3 +1,5 @@
+import { JdFloorModule } from './jd-floor/jd-floor.module';
+import { JdToTopModule } from './jd-to-top/jd-to-top.module';
 import { JdGoodsItemModule } from './jd-goods-item/jd-goods-item.module';
 import { JdBoxModule } from './jd-box/jd-box.module';
 import { JdSwiperModule } from './jd-swiper/jd-swiper.module';
@@ -9,7 +11,9 @@ export const JdModules = [
   JdSearchModule,
   JdSwiperModule,
   JdBoxModule,
-  JdGoodsItemModule
+  JdGoodsItemModule,
+  JdToTopModule,
+  JdFloorModule
 ];
 
 @NgModule({
