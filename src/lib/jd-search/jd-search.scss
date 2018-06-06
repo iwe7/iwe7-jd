@@ -88,6 +88,10 @@ jd-search {
     }
     input {
       flex: 1;
+      outline: none;
+      display: block;
+      height: 100%;
+      border: none;
     }
   }
   &-view {
@@ -96,6 +100,10 @@ jd-search {
     flex-direction: row;
     input {
       flex: 1;
+      outline: none;
+      display: block;
+      height: 100%;
+      border: none;
     }
   }
 }

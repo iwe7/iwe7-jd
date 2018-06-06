@@ -47,10 +47,8 @@ jd-tip {
     }
   }
   .jd-tip {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    max-width: 640px;
-    min-width: 300px;
     margin: 0 auto;
     font-size: 0;
     top: var(--top);
