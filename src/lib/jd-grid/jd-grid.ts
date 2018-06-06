@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ContentChild, TemplateRef } from '@angular/core';
 import { coerceNumberProperty } from '@angular/cdk/coercion';
 @Component({
   selector: 'jd-grid',
@@ -32,6 +32,7 @@ export class JdGridComponent implements OnInit {
     }
     return items;
   }
+  @ContentChild(TemplateRef) tpl: TemplateRef<any>;
   constructor() { }
   ngOnInit() { }
 }
