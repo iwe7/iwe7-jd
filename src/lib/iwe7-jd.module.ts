@@ -1,3 +1,4 @@
+import { JdNewsModule } from './jd-news/jd-news.module';
 import { JdGridModule } from './jd-grid/jd-grid.module';
 import { JdFloorModule } from './jd-floor/jd-floor.module';
 import { JdToTopModule } from './jd-to-top/jd-to-top.module';
@@ -15,7 +16,8 @@ export const JdModules = [
   JdGoodsItemModule,
   JdToTopModule,
   JdFloorModule,
-  JdGridModule
+  JdGridModule,
+  JdNewsModule
 ];
 
 @NgModule({

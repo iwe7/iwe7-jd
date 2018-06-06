@@ -7,5 +7,5 @@
 | jd-goods-item | 商品列表        | [docs](docs/jd-goods-item.md) |
 | jd-back-top   | 返回顶端        | [docs](docs/jd-back-top.md)   |
 | jd-floor      | 京东楼层        | [docs](docs/jd-floor.md)      |
-| jd-grid       | 京东导航格       | [docs](docs/jd-grid.md)      |
-
+| jd-grid       | 京东导航格       | [docs](docs/jd-grid.md)       |
+| jd-news       | 京东快报        | [docs](docs/jd-news.md)       |

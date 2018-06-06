@@ -1,0 +1,18 @@
+<div class="jd-new-left">
+  <img [src]="icon">
+</div>
+<div class="jd-new-center" #center>
+  <swiper-outlet scrollY hasDot="false" [list]="list" height="30px" style="width:280px;">
+    <ng-template swiperItem let-item>
+      <div>
+        <div class="tag">{{item.tag}}</div>
+        <div class="text">
+          {{item.text}}
+        </div>
+      </div>
+    </ng-template>
+  </swiper-outlet>
+</div>
+<div class="jd-new-right" (click)="_more($event)">
+  <i class="line"></i> {{more}}
+</div>

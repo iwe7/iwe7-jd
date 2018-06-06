@@ -1,11 +1,11 @@
-import { Component, OnInit, Input, ContentChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, Input, ContentChild, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { coerceNumberProperty } from '@angular/cdk/coercion';
 @Component({
   selector: 'jd-grid',
   templateUrl: 'jd-grid.html',
-  styleUrls: ['./jd-grid.scss']
+  styleUrls: ['./jd-grid.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-
 export class JdGridComponent implements OnInit {
   _cols: number = 2;
   @Input()
