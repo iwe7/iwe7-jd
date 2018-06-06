@@ -29,6 +29,7 @@ export class JdTipComponent extends Iwe7BaseComponent {
 
   @Input() title: string = '打开跑腿app,立即接单赚钱!';
   @Input() btnTitle: string = '立即打开';
+  
   constructor(
     injector: Injector
   ) {
