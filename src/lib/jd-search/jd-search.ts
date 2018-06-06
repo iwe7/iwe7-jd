@@ -40,7 +40,14 @@ export class JdSearchInputsDefault implements JdSearchInputs {
 })
 export class JdSearchComponent extends Iwe7BaseComponent implements OnInit, ControlValueAccessor {
   @Input() height: string = '45px';
-  @Input() top: string = '45px';
+  _initTop: number = 45;
+  @Input()
+  set top(val: any) {
+    this._initTop = val;
+  }
+  get top() {
+    return this._initTop + 'px';
+  }
   @Input() bgColor: string = '#de181b';
   @Input() opacity: number = 0;
   @Input() totalHeight: number = 300;
@@ -83,7 +90,7 @@ export class JdSearchComponent extends Iwe7BaseComponent implements OnInit, Cont
   set searchIcon(val: string) {
     this._searchIcon = val;
   }
-  
+
   @Output() leftStream: EventEmitter<any> = new EventEmitter();
   @Output() rightStream: EventEmitter<any> = new EventEmitter();
   @Output() focusStream: EventEmitter<any> = new EventEmitter();
@@ -133,9 +140,9 @@ export class JdSearchComponent extends Iwe7BaseComponent implements OnInit, Cont
   getTop() {
     const top = document.documentElement.scrollTop;
     const height = this.ele.nativeElement.clientHeight;
-    if (top <= height) {
+    if (top <= this._initTop) {
       this.styleObj = {
-        top: height - top + 'px'
+        top: this._initTop - top + 'px'
       };
     } else {
       this.styleObj = {
