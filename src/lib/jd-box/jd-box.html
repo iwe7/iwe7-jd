@@ -1,6 +1,6 @@
 <div class="quick-box">
   <div class="quick-box-container">
-    <img [src]="icon">
-    <span>{{title}}</span>
+    <img *ngIf="icon" [src]="icon">
+    <span *ngIf="title">{{title}}</span>
   </div>
 </div>

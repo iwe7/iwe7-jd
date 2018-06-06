@@ -11,8 +11,8 @@ import { Component, OnInit, AfterViewInit, ElementRef, Input, Injector, ChangeDe
 })
 export class JdBoxComponent extends Iwe7BaseComponent {
   width: string;
-  @Input() icon: string = 'assets/jd/logo.png';
-  @Input() title: string = 'title';
+  @Input() icon: string;
+  @Input() title: string;
   constructor(public ele: ElementRef, injector: Injector) {
     super(injector, 'jd-box');
     this.runOutsideAngular(() => {
