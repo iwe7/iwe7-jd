@@ -1,0 +1,5 @@
+<div class="row" *ngFor="let col of cols;">
+  <ng-container *ngFor="let row of rows">
+    <ng-container *ngTemplateOutlet="tpl;context:{$implicit:{col: col,row: row},col: col, row: row}"></ng-container>
+  </ng-container>
+</div>
