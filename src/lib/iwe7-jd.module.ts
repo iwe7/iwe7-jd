@@ -1,3 +1,4 @@
+import { JdGoodsItemModule } from './jd-goods-item/jd-goods-item.module';
 import { JdBoxModule } from './jd-box/jd-box.module';
 import { JdSwiperModule } from './jd-swiper/jd-swiper.module';
 import { JdSearchModule } from './jd-search/jd-search.module';
@@ -7,7 +8,8 @@ export const JdModules = [
   JdTipModule,
   JdSearchModule,
   JdSwiperModule,
-  JdBoxModule
+  JdBoxModule,
+  JdGoodsItemModule
 ];
 
 @NgModule({
