@@ -1,6 +1,8 @@
 :host {
     height: 200px;
     display: block;
+    overflow: hidden;
+    position: relative;
 }
 
 .swiper-slide {

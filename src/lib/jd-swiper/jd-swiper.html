@@ -1,1 +1,6 @@
-<swiper-outlet [height]="height" [list]="list"></swiper-outlet>
+<swiper-outlet #siper="swiperOutlet" [height]="height" [list]="list">
+    <ng-content></ng-content>
+</swiper-outlet>
+<div swiperDots [outlet]="siper">
+
+</div>
