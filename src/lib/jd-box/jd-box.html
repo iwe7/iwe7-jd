@@ -1,6 +1,9 @@
 <div class="quick-box">
-  <div class="quick-box-container">
-    <img *ngIf="icon" [src]="icon">
+  <div class="quick-box-container" *ngIf="!content">
+    <img *ngIf="icon" [src]="item">
     <span *ngIf="title">{{title}}</span>
+  </div>
+  <div class="quick-box-container" *ngIf="content">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
   </div>
 </div>
